@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "test-ngx-cookie-service"
+  "defaultProject": "test-ngx-cookie-service",
+  "cli": {
+    "defaultCollection": "@ngxs/schematics"
+  }
 }

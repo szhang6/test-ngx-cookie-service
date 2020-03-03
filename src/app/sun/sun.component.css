@@ -1,0 +1,36 @@
+.test-sun {
+    width: 400px;
+    height: 200px;
+    background-color: #888888;
+}
+
+.test-sun-2 {
+    background: red;
+}
+
+button {
+    width: 100px;
+    height: 60px;
+    background: salmon;
+    margin-top: 100px;
+}
+
+.newColor {
+    background: chartreuse;
+}
+
+.newColor:hover {
+    background: seagreen;
+}
+
+.mdown {
+    background: skyblue !important;
+}
+
+.mup {
+    background: seagreen !important;
+}
+
+.mover {
+    background: blue;
+}
