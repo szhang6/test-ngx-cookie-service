@@ -1,0 +1,303 @@
+.container-guide {
+  height: 100%;
+  width: 100%;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(14, 19, 24, 0.80);
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1100;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btn-understood {
+  width: 130px;
+  height: 34px;
+  background: rgba(255, 255, 255, 0.00);
+  border: 1px solid #ffffff;
+  border-radius: 3px;
+  font-family: PingFangSC-Regular;
+  font-size: 14px;
+  color: #ffffff;
+  letter-spacing: 1.75px;
+  text-align: center;
+  margin-top: 24px;
+}
+
+.btn-understood:hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.btnUnderstoodMdown {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.btnUnderstoodMup {
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.welcome {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .welcome-content {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: PingFangSC-Regular;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .welcome-start {
+    margin-top: 24px;
+    width: 130px;
+    height: 34px;
+    background: #ffffff;
+    border-radius: 3px;
+    color: #302A2A;
+    font-size: 14px;
+    letter-spacing: 1.75px;
+    text-align: center;
+  }
+
+  .welcome-start:hover {
+    background: #eeeeee !important;
+  }
+
+  .welMouseDown {
+    background: #c5c5c5 !important;
+  }
+
+  .welMouseUp {
+    background: #eeeeee !important;
+  }
+
+}
+
+.apply {
+  width: 100%;
+  height: 100%;
+
+  .apply-icon {
+    width: 56px;
+    height: 56px;
+    margin-top: 160px;
+    margin-left: 14px;
+    float: left;
+  }
+
+  .apply-arrow {
+    width: 118px;
+    height: 90px;
+    float: left;
+    margin-top: 208px;
+    margin-left: 16px;
+  }
+
+  .apply-text {
+    width: 280px;
+    height: 60px;
+    font-family: PingFangSC-Regular;
+    font-size: 20px;
+    color: #ffffff;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    margin-top: 284px;
+    margin-left: 14px;
+  }
+}
+
+.cart {
+  .cart-icon {
+    width: 56px;
+    height: 56px;
+    float: left;
+    margin-top: 234px;
+    margin-left: 14px;
+  }
+
+  .cart-shopping {
+    width: 284px;
+    height: 80px;
+    float: left;
+    margin-top: 70px;
+    margin-left: 14px;
+  }
+
+  .cart-arrow {
+    width: 118px;
+    height: 90px;
+    float: left;
+    margin-top: 130px;
+    margin-left: 14px;
+  }
+
+  .cart-text {
+    width: 300px;
+    height: 30px;
+    font-family: PingFangSC-Regular;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    margin-top: 204px;
+    margin-left: 20px;
+  }
+}
+
+.ao {
+  .cart-icon {
+    width: 56px;
+    height: 56px;
+    float: left;
+    margin-top: 234px;
+    margin-left: 14px;
+  }
+
+  .ao-autoorder {
+    width: 284px;
+    height: 70px;
+    float: left;
+    margin-top: 160px;
+    margin-left: 10px;
+  }
+
+  .ao-arrow {
+    width: 118px;
+    height: 90px;
+    float: left;
+    margin-top: 204px;
+    margin-left: 14px;
+  }
+
+  .ao-text {
+    width: 340px;
+    height: 30px;
+    font-family: PingFangSC-Regular;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    margin-top: 278px;
+    margin-left: 10px;
+  }
+}
+
+.order-check {
+  .cart-icon {
+    width: 56px;
+    height: 56px;
+    float: left;
+    margin-top: 234px;
+    margin-left: 14px;
+  }
+
+  .order-check-history {
+    width: 284px;
+    height: 70px;
+    float: left;
+    margin-top: 280px;
+    margin-left: 14px;
+  }
+
+  .order-check-arrow {
+    width: 118px;
+    height: 90px;
+    float: left;
+    margin-top: 340px;
+    margin-left: 14px;
+  }
+
+  .order-check-text {
+    width: 320px;
+    height: 30px;
+    font-family: PingFangSC-Regular;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    margin-top: 416px;
+    margin-left: 14px;
+  }
+}
+
+.binding {
+  .cart-icon {
+    width: 56px;
+    height: 56px;
+    float: left;
+    margin-top: 234px;
+    margin-left: 14px;
+  }
+
+  .binding-payment {
+    width: 284px;
+    height: 70px;
+    float: left;
+    margin-top: 376px;
+    margin-left: 14px;
+  }
+
+  .binding-arrow {
+    width: 118px;
+    height: 90px;
+    float: left;
+    margin-top: 420px;
+    margin-left: 14px;
+  }
+
+  .binding-text {
+    width: 340px;
+    height: 30px;
+    font-family: PingFangSC-Regular;
+    color: #ffffff;
+    font-size: 20px;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 30px;
+    float: left;
+    margin-top: 494px;
+    margin-left: 14px;
+  }
+
+  .binding-go {
+    width: 130px;
+    height: 34px;
+    background: rgba(255, 255, 255, 0.00);
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    font-family: PingFangSC-Regular;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 1.75px;
+    text-align: center;
+    margin-top: 24px;
+    margin-left: 70px;
+  }
+
+  .binding-go:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}

@@ -1,0 +1,86 @@
+<div class="container-guide" *ngIf="isShowMaskLayer">
+    <div class="cover" (click)="gotBindingInfo()">
+        <div class="welcome" *ngIf="isWelcomeStart">
+            <div class="welcome-content">
+                <div>欢迎加入xxx</div>
+                <div>体验xxx</div>
+                <button class="welcome-start" [class.welMouseDown]="welMouseDown" [class.welMouseUp]="welMouseUp" (mousedown)='handleMouseDown("wel")' (mouseup)='handleMouseUp("wel")' (click)="selectStart()">开启</button>
+            </div>
+        </div>
+        <div class="apply" *ngIf="isApplyIntro">
+            <div class="apply-icon">
+                <img src="./assets/images/guide-apply.png" alt="Apply">
+            </div>
+            <div class="apply-arrow">
+                <img src="./assets/images/guide-arrow.png" alt="Arrow">
+            </div>
+            <div class="apply-text">
+                <div>点击xxx</div>
+                <div>xx！</div>
+                <button class="btn-understood apply-btn apply-btn-hover" [class.btnUnderstoodMdown]="btnUnderstoodMdown" [class.btnUnderstoodMup]="btnUnderstoodMup" (mousedown)='handleMouseDown("understood")' (mouseup)='handleMouseUp("understood")' (click)="gotApplyInfo()">知道了</button>
+            </div>
+        </div>
+        <div class="cart" *ngIf="isCartIntro">
+            <div class="cart-icon">
+                <img src="./assets/images/guide-cart.png" alt="Cart">
+            </div>
+            <div class="cart-shopping">
+                <img src="./assets/images/guide-shopping.png" alt="Shopping">
+            </div>
+            <div class="cart-arrow">
+                <img src="./assets/images/guide-arrow.png" alt="Arrow">
+            </div>
+            <div class="cart-text">
+                <div>点击zxx</div>
+                <button class="btn-understood cart-btn" [class.btnUnderstoodMdown]="btnUnderstoodMdown" [class.btnUnderstoodMup]="btnUnderstoodMup" (mousedown)='handleMouseDown("understood")' (mouseup)='handleMouseUp("understood")' (click)="gotCartInfo()">知道了</button>
+            </div>
+        </div>
+        <div class="ao" *ngIf="isAoIntro">
+            <div class="cart-icon">
+                <img src="./assets/images/guide-cart.png" alt="Cart">
+            </div>
+            <div class="ao-autoorder">
+                <img src="./assets/images/guide-autoorder.png" alt="Autoorder">
+            </div>
+            <div class="ao-arrow">
+                <img src="./assets/images/guide-arrow.png" alt="Arrow">
+            </div>
+            <div class="ao-text">
+                <div>点击xxx</div>
+                <button class="btn-understood ao-btn" [class.btnUnderstoodMdown]="btnUnderstoodMdown" [class.btnUnderstoodMup]="btnUnderstoodMup" (mousedown)='handleMouseDown("understood")' (mouseup)='handleMouseUp("understood")' (click)="gotAoInfo()">知道了</button>
+            </div>
+        </div>
+        <div class="order-check" *ngIf="isOrderCheckIntro">
+            <div class="cart-icon">
+                <img src="./assets/images/guide-cart.png" alt="Cart">
+            </div>
+            <div class="order-check-history">
+                <img src="./assets/images/guide-history.png" alt="Ordercheck">
+            </div>
+            <div class="order-check-arrow">
+                <img src="./assets/images/guide-arrow.png" alt="Arrow">
+            </div>
+            <div class="order-check-text">
+                <div>点击zzz</div>
+                <button class="btn-understood order-check-btn" [class.btnUnderstoodMdown]="btnUnderstoodMdown" [class.btnUnderstoodMup]="btnUnderstoodMup" (mousedown)='handleMouseDown("understood")' (mouseup)='handleMouseUp("understood")' (click)="gotOrderCheckInfo($event)">知道了</button>
+            </div>
+        </div>
+        <div class="binding" *ngIf="isBindingIntro">
+            <div class="cart-icon">
+                <img src="./assets/images/guide-cart.png" alt="Cart">
+            </div>
+            <div class="binding-payment">
+                <img src="./assets/images/guide-payment.png" alt="Payment">
+            </div>
+            <div class="binding-arrow">
+                <img src="./assets/images/guide-arrow.png" alt="Arrow">
+            </div>
+            <div class="binding-text">
+                <div>点击xxxx</div>
+                <div>快去sss</div>
+                <button class="btn-understood" [class.btnUnderstoodMdown]="btnUnderstoodMdown" [class.btnUnderstoodMup]="btnUnderstoodMup" (mousedown)='handleMouseDown("understood")' (mouseup)='handleMouseUp("understood")' (click)="gotBindingInfo($event)">知道了</button>
+                <button class="binding-go" [class.btnUnderstoodMdown]="btnUnderstoodMdown" [class.btnUnderstoodMup]="btnUnderstoodMup" (mousedown)='handleMouseDown("understood")' (mouseup)='handleMouseUp("understood")' (click)="gotBindingAddress()">去qq</button>
+            </div>
+        </div>
+    </div>
+</div>
