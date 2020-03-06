@@ -6,19 +6,23 @@
 .app-container-header {
     width: 100%;
     height: 80px;
-    background: #888888;
+    background: #fff;
+    box-shadow: 0 1px 2px #dbdbdb;
 }
 
 .app-container-left {
     width: 10%;
     height: 80%;
-    background: #333333;
+    background: #2d3037;
     float: left;
 }
 
 .app-container-main {
-    width: 90%;
+    width: 88%;
     height: 80%;
-    background: pink;
+    background: #f5f6f9;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
 }
 
