@@ -1,3 +1,7 @@
+# Below are the tips from the original repository
+# Will update relative information when something is changed in this repository.
+# March 27th, 2020
+
 # TestNgxCookieService
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.9.
