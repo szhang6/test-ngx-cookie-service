@@ -2,6 +2,8 @@
 # Will update relative information when something is changed in this repository.
 # March 27th, 2020
 
+# Tried modify project name on 29th Mar. 2020
+
 # TestNgxCookieService
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.9.
