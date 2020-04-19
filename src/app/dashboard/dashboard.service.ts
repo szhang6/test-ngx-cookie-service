@@ -10,7 +10,7 @@ export class DashboardService {
   //add data
   public importantDates:object = {
        "key": "pacesetterDate",
-       "importantDateValue":"4,19,2020",
+       "importantDateValue":"4,19,2020"
   }
 
  // getter
