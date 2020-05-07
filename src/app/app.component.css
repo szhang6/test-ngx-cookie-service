@@ -34,11 +34,21 @@
     padding: 0 20px;
 }
 
-.app-container-left {
+.app-container-left-section {
     width: 10%;
     height: 80%;
-    background: #888;
+    background:rgb(45,48,55);
+    color: rgb(255,255,255);
     float: left;
+}
+
+.app-container-left {
+    margin-left: 1rem;
+}
+
+.app-container-left > div {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .app-container-main {
@@ -48,5 +58,39 @@
     margin-top: 10px;
     margin-left: 10px;
     float: left;
+}
+
+.workbench {
+    display: flex;
+    height: 100%;
+}
+
+.tabs-box {
+    width: 770px;
+    background: #fff;
+    margin: 14px;
+    margin-right: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+}
+
+.right-content {
+    width: 370px;
+    margin: 14px;
+}
+
+.task {
+    background: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    height: 300px;
+}
+
+.schedule {
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    height: 300px;
 }
 
