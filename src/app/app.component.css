@@ -74,6 +74,30 @@
     border-radius: 4px;
 }
 
+.el-tabs {
+    
+}
+
+.el-tabs__header {
+    display: flex;
+    background: #e6e6e6;
+    border-bottom: 1px solid #333;
+}
+
+.el-tabs__header > div {
+    margin: 16px;
+}
+
+.el-tabs__content {
+    margin-top: 16px;
+}
+
+.list-cell {
+    margin: 10px;
+    padding: 18px;
+    border: 1px solid #888888;
+}
+
 .right-content {
     width: 370px;
     margin: 14px;
@@ -85,6 +109,22 @@
     border: 1px solid #e6e6e6;
     border-radius: 4px;
     height: 300px;
+}
+
+.task-inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.task-title {
+    margin: 0 20px;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid #e6e6ee;
+}
+
+.content-item {
+    margin: 20px;
 }
 
 .schedule {
