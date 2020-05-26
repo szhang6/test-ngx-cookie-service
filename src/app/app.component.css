@@ -42,8 +42,12 @@
     margin-right: 10px;
 }
 
-.nav_avatar_mark::before {
-    content: "\E790";
+.nav_avatar_mark > img {
+    width: 10px;
+}
+
+.nav_avatar_mark:before {
+    /* content: "\E790"; */
 }
 
 .app-container-left-section {
@@ -145,4 +149,3 @@
     border-radius: 4px;
     height: 300px;
 }
-
