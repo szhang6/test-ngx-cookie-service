@@ -9,10 +9,12 @@
           <a href="">商业智能</a>
           <a href="">项目管理</a>
       </div>
-      <span class="nav_avatar">Josh Zhang</span>
-      <i class="nav_avatar_mark">
-        <img src="./assets/images/arrow-down1.png" alt="">
-      </i>
+      <span class="nav_avatar" (click)="handleAvatarClick()">
+        <span class="nav_avatar_name">Josh Zhang</span>
+        <i class="nav_avatar_mark">
+          <img src="./assets/images/arrow-down1.png" alt="">
+        </i>
+      </span>
     </div>
   </div>
   <!-- left -->
@@ -82,6 +84,15 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <!-- pop-over -->
+  <div class="pop-over">
+    <div class="handle-items">
+      <div class="hanle-item">个人中心</div>
+      <div class="hanle-item">推出登陆</div>
+      <div class="hanle-item">版本：V0.01</div>
+      <div class="handle-box">进入企业管理后台</div>
     </div>
   </div>
 </div>

@@ -24,6 +24,10 @@ export class AppComponent {
 
     // console.log('this.isShowGuideCover:'+this.isShowGuideCover);
   }
+
+  handleAvatarClick() {
+    alert(11);
+  }
  
   ngOnInit(): void {
     this.handleGuideCover();
