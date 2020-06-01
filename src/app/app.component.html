@@ -1,93 +1,95 @@
 <div class="app-component">
-  <!-- header -->
-  <div class="app-container-header">
-    <div class='navbar'>
-      <img class='logo' src="assets/images/tiger.jpg" alt="logo">
-      <div class='nav-items-container'>
-          <a href="">办公</a>
-          <a href="">客户管理</a>
-          <a href="">商业智能</a>
-          <a href="">项目管理</a>
+  <div class="app-component-inner" (click)="handlePopoverOutside()">
+    <!-- header -->
+    <div class="app-container-header">
+      <div class='navbar'>
+        <img class='logo' src="assets/images/tiger.jpg" alt="logo">
+        <div class='nav-items-container'>
+            <a href="">办公</a>
+            <a href="">客户管理</a>
+            <a href="">商业智能</a>
+            <a href="">项目管理</a>
+        </div>
+        <span class="nav_avatar" (click)="handleAvatarClick();$event.stopPropagation();">
+          <span class="nav_avatar_name">Josh Zhang</span>
+          <i class="nav_avatar_mark">
+            <img src="./assets/images/arrow-down1.png" alt="">
+          </i>
+        </span>
       </div>
-      <span class="nav_avatar" (click)="handleAvatarClick()">
-        <span class="nav_avatar_name">Josh Zhang</span>
-        <i class="nav_avatar_mark">
-          <img src="./assets/images/arrow-down1.png" alt="">
-        </i>
-      </span>
     </div>
-  </div>
-  <!-- left -->
-  <div class="app-container-left-section">
-    <div class="app-container-left">
-      <div>快速创建》</div>
-      <div>工作台</div>
-      <div>日程</div>
-      <div>任务</div>
-      <div>公告</div>
-      <div>日志</div>
-      <div>审批</div>
-      <div>通讯录</div>
+    <!-- left -->
+    <div class="app-container-left-section">
+      <div class="app-container-left">
+        <div>快速创建》</div>
+        <div>工作台</div>
+        <div>日程</div>
+        <div>任务</div>
+        <div>公告</div>
+        <div>日志</div>
+        <div>审批</div>
+        <div>通讯录</div>
+      </div>
     </div>
-  </div>
-  <!-- main -->
-  <div class="app-container-main">
-    <div class="workbench">
-      <div class="tabs-box">
-        <div class="el-tabs">
-          <div class="el-tabs__header">
-            <div class="tab-0">全部</div>
-            <div class="tab-1">日志</div>
-            <div class="tab-2">审批</div>
-            <div class="tab-3">任务</div>
-            <div class="tab-4">日程</div>
-            <div class="tab-5">公告</div>
-          </div>
-          <div class="el-tabs__content">
-            <div class="list-cell">
-              <div class="list-cell__content">
-                <div class="header">
-                  <div class="header-img"></div>
-                  <div class="header-row"></div>
+    <!-- main -->
+    <div class="app-container-main">
+      <div class="workbench">
+        <div class="tabs-box">
+          <div class="el-tabs">
+            <div class="el-tabs__header">
+              <div class="tab-0">全部</div>
+              <div class="tab-1">日志</div>
+              <div class="tab-2">审批</div>
+              <div class="tab-3">任务</div>
+              <div class="tab-4">日程</div>
+              <div class="tab-5">公告</div>
+            </div>
+            <div class="el-tabs__content">
+              <div class="list-cell">
+                <div class="list-cell__content">
+                  <div class="header">
+                    <div class="header-img"></div>
+                    <div class="header-row"></div>
+                  </div>
+                  <div class="text">
+                    <p>
+                      <span>今日工作内容：</span>日志测试
+                    </p>
+                  </div>
                 </div>
-                <div class="text">
-                  <p>
-                    <span>今日工作内容：</span>日志测试
-                  </p>
+                <div class="list-cell__footer">
+                  <button>
+                    <span>回复</span>
+                  </button>
                 </div>
-              </div>
-              <div class="list-cell__footer">
-                <button>
-                  <span>回复</span>
-                </button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="right-content">
-        <div class="task">
-          <div class="task-inner">
-            <div class="task-title">任务</div>
-            <div class="task-content">
-              <div class="content-item">评估新功能</div>
-              <div class="content-item">其他浏览器兼容</div>
-              <div class="content-item">和客户沟通订单模块</div>
-              <div class="content-item">性能测试</div>
+        <div class="right-content">
+          <div class="task">
+            <div class="task-inner">
+              <div class="task-title">任务</div>
+              <div class="task-content">
+                <div class="content-item">评估新功能</div>
+                <div class="content-item">其他浏览器兼容</div>
+                <div class="content-item">和客户沟通订单模块</div>
+                <div class="content-item">性能测试</div>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="schedule">
-          <div class="schedule-calendar">
-            <div class="title">日程</div>
-            <div class="content"></div>
+          <div class="schedule">
+            <div class="schedule-calendar">
+              <div class="title">日程</div>
+              <div class="content"></div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- pop-over -->
-  <div class="pop-over">
+  <div class="pop-over" *ngIf="isShowPopOver">
     <div class="handle-items">
       <div class="hanle-item">个人中心</div>
       <div class="hanle-item">推出登陆</div>

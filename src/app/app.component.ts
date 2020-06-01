@@ -12,6 +12,7 @@ export class AppComponent {
   cookieValue = '';
   isHasCookie: boolean;
   isShowGuideCover: boolean;
+  isShowPopOver:boolean;
 
   handleGuideCover() {
     let cookieArr = document.cookie.split(";").filter(item => item.includes('guide_cover'));
@@ -26,7 +27,11 @@ export class AppComponent {
   }
 
   handleAvatarClick() {
-    alert(11);
+    this.isShowPopOver = true;
+  }
+
+  handlePopoverOutside() {
+    this.isShowPopOver = false;
   }
  
   ngOnInit(): void {
