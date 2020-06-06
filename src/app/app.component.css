@@ -3,6 +3,10 @@
     height: 100%;
 }
 
+.app-component-inner {
+    height: 100%;
+}
+
 .app-container-header {
     width: 100%;
     height: 80px;
@@ -52,7 +56,7 @@
 
 .app-container-left-section {
     width: 10%;
-    height: 90%;
+    height: 100%;
     background:rgb(45,48,55);
     color: rgb(255,255,255);
     float: left;
@@ -69,7 +73,7 @@
 
 .app-container-main {
     width: 88%;
-    height: 90%;
+    height: 100%;
     background: #f5f6f9;
     margin-top: 10px;
     margin-left: 10px;
