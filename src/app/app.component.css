@@ -12,6 +12,7 @@
     height: 80px;
     background: #fff;
     box-shadow: 0 1px 2px #dbdbdb;
+    min-width: 1200px;
 }
 
 .navbar {

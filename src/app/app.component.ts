@@ -13,6 +13,7 @@ export class AppComponent {
   isHasCookie: boolean;
   isShowGuideCover: boolean;
   isShowPopOver:boolean;
+  isReplyEnabled:boolean;
 
   handleGuideCover() {
     let cookieArr = document.cookie.split(";").filter(item => item.includes('guide_cover'));
@@ -33,8 +34,18 @@ export class AppComponent {
   handlePopoverOutside() {
     this.isShowPopOver = false;
   }
+
+  // this is for testing [ngClass] directive usage.
+  handleReplyClick() {
+    if (this.isReplyEnabled == false) {
+      this.isReplyEnabled = true;
+    } else {
+      this.isReplyEnabled = false;
+    }
+  }
  
   ngOnInit(): void {
     this.handleGuideCover();
+    this.isReplyEnabled = false;
   }
 }
